@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: Judy
+Description: C library creating and accessing dynamic arrays
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lJudy
+Cflags: -I${includedir}

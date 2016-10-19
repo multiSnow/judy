@@ -20,3 +20,7 @@ endif
 #EXTRA_DIST = Makefile.multi original_configure .cvsignore
 
 DISTCLEANFILES = config.log config.status Makefile libtool make.out
+
+EXTRA_DIST = Judy.pc.in
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA = Judy.pc

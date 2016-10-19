@@ -254,7 +254,8 @@ AC_CONFIG_FILES([Makefile
                  src/obj/Makefile
 		 tool/Makefile
 		 doc/Makefile
-		 test/Makefile])
+		 test/Makefile
+		 Judy.pc])
 
 
 AC_OUTPUT
