@@ -251,7 +251,7 @@ AC_CONFIG_FILES([Makefile
                  src/JudyL/Makefile
                  src/JudySL/Makefile
                  src/Makefile
-                 src/obj/Makefile
+                 src/libJudy/Makefile
 		 tool/Makefile
 		 doc/Makefile
 		 test/Makefile
