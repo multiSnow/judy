@@ -10,9 +10,9 @@ AUTOMAKE_OPTIONS = foreign
 # test (for libJudy).
 #SUBDIRS = src tool doc test make_includes
 #SUBDIRS = src/JudyCommon src/JudyL src/Judy1 src/JudySL src/JudyHS src/obj
-SUBDIRS = src tool test
+SUBDIRS = src test
 if BUILD_MANPAGE
-SUBDIRS += doc
+SUBDIRS += tool doc
 endif
 
 # These files will be included in our tarballs, even though automake knows
