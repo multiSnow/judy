@@ -1,14 +1,14 @@
 AM_CPPFLAGS = @CPPFLAGS@ -I${srcdir} -I${srcdir}/.. -I${srcdir}/../JudyCommon/
-AM_CFLAGS = -DJUDY1 @WARN_CFLAGS@ 
+AM_CFLAGS = -DJUDY1 @WARN_CFLAGS@
 
 noinst_LTLIBRARIES = libJudy1.la libnext.la libprev.la libcount.la libinline.la
 
-libJudy1_la_SOURCES = Judy1Test.c Judy1Tables.c Judy1Set.c Judy1SetArray.c Judy1Unset.c Judy1Cascade.c Judy1Count.c Judy1CreateBranch.c Judy1Decascade.c Judy1First.c Judy1FreeArray.c Judy1InsertBranch.c Judy1MallocIF.c Judy1MemActive.c Judy1MemUsed.c 
+libJudy1_la_SOURCES = Judy1Test.c Judy1Tables.c Judy1Set.c Judy1SetArray.c Judy1Unset.c Judy1Cascade.c Judy1Count.c Judy1CreateBranch.c Judy1Decascade.c Judy1First.c Judy1FreeArray.c Judy1InsertBranch.c Judy1MallocIF.c Judy1MemActive.c Judy1MemUsed.c
 
-libnext_la_SOURCES = Judy1Next.c Judy1NextEmpty.c 
+libnext_la_SOURCES = Judy1Next.c Judy1NextEmpty.c
 libnext_la_CFLAGS = $(AM_CFLAGS) -DJUDYNEXT
 
-libprev_la_SOURCES = Judy1Prev.c Judy1PrevEmpty.c 
+libprev_la_SOURCES = Judy1Prev.c Judy1PrevEmpty.c
 libprev_la_CFLAGS = $(AM_CFLAGS) -DJUDYPREV
 
 libcount_la_SOURCES = Judy1ByCount.c
@@ -21,7 +21,7 @@ Judy1Tables.c: Judy1TablesGen.c
 	$(CC) $(AM_CPPFLAGS) $(AM_CFLAGS) @CFLAGS@ -o Judy1TablesGen Judy1TablesGen.c; ./Judy1TablesGen
 
 Judy1ByCount.c:${srcdir}/../JudyCommon/JudyByCount.c
-	cp -f ${srcdir}/../JudyCommon/JudyByCount.c      		Judy1ByCount.c   
+	cp -f ${srcdir}/../JudyCommon/JudyByCount.c      		Judy1ByCount.c
 
 Judy1Cascade.c:${srcdir}/../JudyCommon/JudyCascade.c
 	cp -f ${srcdir}/../JudyCommon/JudyCascade.c      		Judy1Cascade.c
@@ -83,7 +83,7 @@ Judy1PrevEmpty.c:${srcdir}/../JudyCommon/JudyPrevNextEmpty.c
 Judy1TablesGen.c:${srcdir}/../JudyCommon/JudyTables.c
 	cp -f ${srcdir}/../JudyCommon/JudyTables.c	        Judy1TablesGen.c
 
-DISTCLEANFILES = .deps Makefile 
+DISTCLEANFILES = .deps Makefile
 
 CLEANFILES = Judy1ByCount.c \
 	     Judy1Cascade.c \
