@@ -1,4 +1,4 @@
-AM_CPPFLAGS = @CPPFLAGS@ -I. -I.. -I../JudyCommon/
+AM_CPPFLAGS = @CPPFLAGS@ -I${srcdir} -I${srcdir}/.. -I${srcdir}/../JudyCommon/
 AM_CFLAGS = @CFLAGS@ @WARN_CFLAGS@ 
 
 noinst_LTLIBRARIES = libJudySL.la

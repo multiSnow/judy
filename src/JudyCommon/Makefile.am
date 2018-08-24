@@ -1,4 +1,4 @@
-AM_CPPFLAGS = @CPPFLAGS@ -I. -I..
+AM_CPPFLAGS = @CPPFLAGS@ -I${srcdir} -I${srcdir}/..
 AM_CFLAGS = @CFLAGS@ @WARN_CFLAGS@ 
 
 noinst_LTLIBRARIES = libJudyMalloc.la
